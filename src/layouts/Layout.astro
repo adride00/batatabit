@@ -1,0 +1,30 @@
+---
+export interface Props {
+  title: string
+  pageClass?: string
+  showHeader?: boolean
+  showFooter?: boolean
+}
+
+const {
+  title,
+  pageClass,
+  showHeader = true,
+  showFooter = true,
+} = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+  </head>
+  <body class={pageClass}>
+    <!-- {showHeader && <Header />} -->
+    <main class='main'>
+      <slot />
+    </main>
+    <!-- {showFooter && <Footer />} -->
+    <script src='../js/script.js'></script>
+    <slot name='scripts' />
+  </body>
+</html>
