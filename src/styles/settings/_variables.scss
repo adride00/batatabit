@@ -1,0 +1,25 @@
+$colors: (
+"bitcoin-orange": #f7931a,
+"soft-orange": #ffe9d5,
+"secondary-blue": #1a9af7,
+"soft-blue": #e7f5ff,
+"warm-black": #282623,
+"black": #201e1c,
+"grey": #bababa,
+"off-white": #faf8f7,
+"just-white": #fff,
+);
+
+$color-bitcoin-orange: map-get($colors, 'bitcoin-orange');
+$color-soft-orange: map-get($colors, 'soft-orange');
+$color-secondary-blue: map-get($colors, 'secondary-blue');
+$color-soft-blue: map-get($colors, 'soft-blue');
+$color-warm-black: map-get($colors, 'warm-black');
+$color-black: map-get($colors, 'black');
+$color-grey: map-get($colors, 'grey');
+$color-off-white: map-get($colors, 'off-white');
+$color-just-white: map-get($colors, 'just-white');
+
+$font-family-principal: 'DM Sans', sans-serif;
+
+$img-path-down-arrow: url('./assets/icons/down-arrow.svg');
