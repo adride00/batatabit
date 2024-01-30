@@ -16,12 +16,18 @@ const {
   showHeader = true,
   showFooter = true,
 } = Astro.props
+import './src/styles/style.scss';
 ---
 
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-  </head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={ Astro.generator } />
+		<title>Astro</title>
+	</head>
   <link rel='preconnect' href='https://fonts.googleapis.com' />
   <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -29,9 +35,11 @@ const {
   <body class={pageClass}>
     {showHeader && <Header />}
     <main class='main'>
+      <slot />
     </main>
     {showFooter && <Footer />}
     <script src='../js/script.js'></script>
     <slot name='scripts' />
   </body>
 </html>
+
