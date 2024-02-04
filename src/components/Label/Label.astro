@@ -1,0 +1,13 @@
+---
+type Props = {
+  className?: string;
+  backgroundColor?: string;
+};
+
+const { backgroundColor, className } = Astro.props
+
+---
+
+<div class={`label ${backgroundColor} ${className}`}>
+  <slot />
+</div>

@@ -1,0 +1,81 @@
+@use '../../settings/variables' as *;
+
+main{
+
+  width: 100%;
+  height: auto;
+  background-color: $color-off-white;
+
+  .exchange{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    &__image-background{
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      background-image: url('/assets/img/Bitcoin.svg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &__container-title{
+      width: 100%;
+      min-width: 288px;
+      max-width: 900px;
+      margin: 0 auto;
+
+      h2{
+        margin-bottom: 30px;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        color: $color-black;
+      }
+
+      p{
+        margin-bottom: 30px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.6rem;
+        color: #757575;
+      }
+    }
+
+    &__currency-table{
+      width: 70%;
+      min-width: 235px;
+      max-width: 500px;
+      height: 360px;
+      margin: 0 auto;
+      font-family: "Inter", sans-serif;
+    }
+
+    &__table-title{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      line-height: 2.3rem;
+    }
+
+    &__table-container{
+      width: 90%;
+      min-width: 230px;
+      max-width: 300px;
+      height: 250px;
+      margin: 0 auto;
+    }
+
+    &__label-text{
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+
+    
+  }
+}

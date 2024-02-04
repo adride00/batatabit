@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+@each $color-name, $color-value in $colors {
+  .color--#{$color-name} {
+    color: $color-value;
+  }
+
+  .bg-color--#{$color-name} {
+    background-color: $color-value;
+  }
+}
+
+@each $icon-name, $icon-path in $icons {
+  .icon--#{$icon-name} {
+    background-image: $icon-path;
+  }
+}

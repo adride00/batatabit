@@ -1,0 +1,36 @@
+@use '../../settings/variables' as *;
+
+.table{
+  width: 100%;
+  height: 100%;
+
+  td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: $color-grey;
+    background-color: $color-just-white;
+ 
+    span{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-left: 10px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;  
+    }
+    
+    
+  }
+
+  &__rigth{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+  }
+
+
+}
