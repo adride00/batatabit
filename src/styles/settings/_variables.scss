@@ -22,4 +22,11 @@ $color-just-white: map-get($colors, 'just-white');
 
 $font-family-principal: 'DM Sans', sans-serif;
 
-$img-path-down-arrow: url('./assets/icons/down-arrow.svg');
+$img-path-down-arrow: url('/assets/icons/trending-down.svg');
+$img-path-up-arrow: url('/assets/icons/trending-up.svg');
+
+
+$icons: (
+  "down-arrow": $img-path-down-arrow,
+  "up-arrow": $img-path-up-arrow,
+);

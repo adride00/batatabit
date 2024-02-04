@@ -1,0 +1,35 @@
+---
+type Props = {
+  monedas: {
+    coin: string;
+    price: string;
+    icon: string;
+  }[];
+};
+
+const { monedas } = Astro.props
+
+---
+<style>
+  .table {
+    border-collapse: collapse;
+    border-radius: 15px;
+  }
+
+  .table td,
+  .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+</style>
+
+<table class="table">
+  {
+    monedas.map((moneda) => (
+      <tr>
+        <td>{moneda.coin}</td>
+        <td>{moneda.price}<span class={moneda.icon}></span></td>
+      </tr>
+    ))
+  }
+</table>
