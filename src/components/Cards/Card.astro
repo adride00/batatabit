@@ -1,15 +1,18 @@
 ---
 type Props = {
   title: string;
-  body: string;
+  description: string;
   icon: string;
+  className?: string;
 }
+
+const { title, description, icon, className } = Astro.props;
 ---
 
 
 
-<article class='card'>
-  <span class='card__icon'></span>
-  <p class='card__title'></p>
-  <p class='card__body'></p>
+<article class={`card ${className}`}>s
+  <span class={`${icon}`}></span>
+  <p class='card__title'>{title}</p>
+  <p class='card__body'>{description}</p>
 </article>
